@@ -12,7 +12,6 @@
   display: flex;
   position: relative;
   width: 100%;
-  /* padding: 0 50px; */
   height: 80px;
   background-color: #f7f7f7;
 }
@@ -23,7 +22,6 @@
   display: flex;
   position: relative;
   width: 100%;
-  /* padding: 0 50px; */
   height: 80px;
   background-color: #000;
 }
@@ -34,6 +32,9 @@
 
 .navbarService {
   background-color: #000000;
+}
+.navbarService .nav li a {
+  color: #fff;
 }
 
 .hideNavbar {
@@ -73,7 +74,7 @@
 .hamburger div {
   width: 30px;
   height: 1px;
-  background-color: #000;
+  background-color: #fff;
   display: inline;
   border-radius: 2.5px;
   transition: all 0.5s ease-in-out;
@@ -212,13 +213,10 @@
 @media screen and (min-width: 760px) and (max-width: 1000px) {
   .navbar {
     height: 10vh;
-    padding: 0;
     transition: top 300ms;
-    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding: 1rem;
   }
 
   .logo {

@@ -1,11 +1,10 @@
 import React from "react";
 import style from "../styles/ChatBotSection.module.css";
-import Link from "next/link";
 
 const ChatBotSection = () => {
   return (
     <div className={style.ChatBotSection}>
-      <div className="container">
+      <div className="container-fluid container-lg">
         <div className={`${style.row} row`}>
           <div className="col-12">
             <h1 className="text-black">

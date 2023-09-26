@@ -14,8 +14,8 @@ const ProjectionSection = (props: Props) => {
   return (
     <>
       <div className={`${styles.baseWrapper} ${styles.projectionWrapper}`}>
-        <div className="container">
-          <div className="row gx-3 mb-3">
+        <div className="container-fluid container-lg">
+          <div className="row g-3 mb-3">
             <div className="col-12 col-xl-6">
               <div className={styles.bannerHeader}>
                 <h2>
@@ -27,7 +27,7 @@ const ProjectionSection = (props: Props) => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-xl-2">
+            <div className="col-12 col-sm-6 col-xl-2">
               <Card className="cardSecondary first">
                 <Card.Body>
                   <Image
@@ -38,7 +38,7 @@ const ProjectionSection = (props: Props) => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-12 col-xl-2">
+            <div className="col-12 col-sm-6 col-xl-2">
               <Card className="cardSecondary">
                 <Card.Body>
                   <Image
@@ -49,7 +49,7 @@ const ProjectionSection = (props: Props) => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-12 col-xl-2">
+            <div className="col-12 col-sm-6 col-xl-2">
               <Card className="cardSecondary">
                 <Card.Body>
                   <Image
@@ -60,11 +60,9 @@ const ProjectionSection = (props: Props) => {
                 </Card.Body>
               </Card>
             </div>
-          </div>
-          <div className="row gx-3">
             <div className="col-12 col-xl-4">
               <div className="row g-3 h-100">
-                <div className="col-12 col-xl-6">
+                <div className="col-12 col-sm-6">
                   <Card className="cardSecondary experience">
                     <Card.Body>
                       <div className="projectionContent">
@@ -74,7 +72,7 @@ const ProjectionSection = (props: Props) => {
                     </Card.Body>
                   </Card>
                 </div>
-                <div className="col-12 col-xl-6">
+                <div className="col-12 col-sm-6">
                   <Card className="cardSecondary projects">
                     <Card.Body>
                       <div className="projectionContent">
@@ -108,7 +106,7 @@ const ProjectionSection = (props: Props) => {
                     </Card.Body>
                   </Card>
                 </div>
-                <div className="col-12 col-xl-6">
+                <div className="col-12 col-sm-6">
                   <Card className="cardSecondary delivery">
                     <Card.Body>
                       <div className="projectionContent">
@@ -118,7 +116,7 @@ const ProjectionSection = (props: Props) => {
                     </Card.Body>
                   </Card>
                 </div>
-                <div className="col-12 col-xl-6">
+                <div className="col-12 col-sm-6">
                   <Card className="cardSecondary time">
                     <Card.Body>
                       <div className="projectionContent">
@@ -130,7 +128,7 @@ const ProjectionSection = (props: Props) => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-xl-4">
+            <div className="col-12 col-sm-6 col-xl-4">
               <Card className="cardSecondary bottomRight group">
                 <Card.Body>
                   <div className="overlay"></div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import navStyles from "../styles/Navbar.module.css";
 import style from "../styles/AboutNav.module.css";
 import sideNav from "../styles/SideNav.module.css";
-import JNETLogo from "../public/assets/logos/jnet-logo.png";
+import JNETLogo from "../public/assets/logos/jnet-logo.svg";
 import JNETLogoWhite from "../public/assets/logos/jnet-logo-white.svg";
 import aboutSideNav from "../styles/AboutSideNav.module.css";
 import ServiceDropdown from "@/components/ServiceDropdown";
@@ -60,7 +60,7 @@ const Navbar = (props: Props) => {
             open ? navStyles.navbarBlack : navStyles.navbar
           }`}
         >
-          <div className="container">
+          <div className="container-fluid container-lg">
             <div className="row align-items-center justify-content-between">
               <div className="col-auto">
                 <div className={navStyles.logo} id="mySidepanel">
@@ -76,11 +76,7 @@ const Navbar = (props: Props) => {
                       />
                     ) : (
                       <Image
-                        src={
-                          router.asPath === "/About"
-                            ? JNETLogoWhite
-                            : JNETLogoWhite
-                        }
+                        src={router.asPath === "/" ? JNETLogoWhite : JNETLogo}
                         alt="JNET Logo"
                         onClick={() => {
                           setOpen(false);
@@ -108,12 +104,12 @@ const Navbar = (props: Props) => {
                   >
                     Services
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href={"/"}>Industries & Expertises</Link>
                   </li>
                   <li>
                     <Link href={"/"}>Case Studies</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href={"/About"}>Company</Link>
                   </li>

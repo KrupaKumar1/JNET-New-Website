@@ -17,7 +17,7 @@ const Categories: React.FC<CategoriesProps> = (props: any) => {
   return (
     <>
       <div className={`${styles.categoryContainer} `}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-12">
               <div className={styles.category}>

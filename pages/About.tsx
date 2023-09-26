@@ -1,13 +1,11 @@
 import React from "react";
 import style from "../styles/About.module.css";
-
-import Navbar from "@/components/Navbar";
 import ChatBotSection from "./ChatBotSection";
 const About = () => {
   return (
     <>
       <div className={`${style.titleContainer}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className={`row`}>
             <div className={`col-12`}>
               <p className={`${style.text1} text-white`}>About</p>
@@ -20,7 +18,7 @@ const About = () => {
         </div>
       </div>
       <div className={`${style.aboutcontainer2}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className={`${style.textSupport} col-12`}>
               <p className="text-black">
@@ -39,7 +37,7 @@ const About = () => {
         </div>
       </div>
       <div className={`${style.aboutcontainer3}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className={`${style.textSupport} col-12`}>
               <p className="text-white">
@@ -54,7 +52,7 @@ const About = () => {
         </div>
       </div>
       <div className={`${style.aboutcontainer4}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div
               className={`${style.textSupport} col-xl-12 col-lg-12 col-md-12`}

@@ -1,7 +1,3 @@
-@font-face {
-  font-family: var(--font-mono);
-  src: url("../public/fonts/Aileron-Bold.otf");
-}
 .baseWrapper {
   width: 100%;
   padding: 3rem 0rem;
@@ -50,9 +46,7 @@
   justify-content: center;
   align-items: center;
   background-color: #013398;
-  /* padding-top: 80px; */
 }
-
 .landingContainer {
   height: calc(90vh);
   width: 100%;
@@ -63,17 +57,14 @@
   background-size: 530px;
   padding: 0rem;
 }
-
 .landingHeading h1 {
   color: #000;
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
-
 .landingText p {
   font-size: 20px;
   color: #000;
-  margin-right: 15rem;
 }
 .videoContainer {
   position: relative;
@@ -137,7 +128,8 @@
     #f7f7f7 100%
   );
   backdrop-filter: brightness(20%);
-  padding-top: 7rem;
+  /* padding-top: 7rem; */
+  padding-top: 120px;
 }
 .bannerWrapper .bannerTile {
   position: absolute;
@@ -413,6 +405,38 @@
   width: 200px;
 }
 
+@media all and (max-width: 1399.98px) {
+  .videoContainer .homeVideo,
+  .videoContainer .videoBackdrop {
+    height: calc(100vh);
+  }
+  .bannerWrapper .bannerTile {
+    padding: 2.5rem;
+    width: 100%;
+    top: -56px;
+  }
+  .videoContainer .videoContent {
+    padding: 2rem 2rem 0rem;
+  }
+  .videoContainer .videoContent p {
+    font-size: 1rem;
+  }
+  .bannerWrapper {
+    background: #fff;
+    padding-top: 140px;
+  }
+}
+
+@media all and (max-width: 1023.98px) {
+  .baseWrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .landingContainer {
+    padding: 0rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .landingContainer {
     height: 353px;
@@ -564,16 +588,12 @@
     height: 100px;
     width: 180px;
   }
-
   .videoSection {
     min-height: fit-content;
     height: 15rem;
     width: 100%;
     padding: 0;
     margin: 1rem 0 4rem 0;
-  }
-  .copyright {
-    padding: 0px 0px;
   }
   .socialLogos {
     height: 100px;
@@ -586,12 +606,23 @@
     height: 65px;
   }
   .copyright {
+    padding: 0;
     display: flex;
     align-items: flex-start;
   }
   .copyright h6 {
     width: 80%;
     padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .landingHeading p {
+    margin: 0px;
+    color: #000;
+    height: 120px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
@@ -611,29 +642,16 @@
     display: flex;
     align-items: center;
   }
-
-  /* landingContainer */
-
   .landingHeading p {
     color: #000;
     height: 120px;
     font-size: 32px;
     line-height: 40px;
   }
-
   .landingText p {
     margin-top: 14px;
     font-size: 18px;
     color: #000;
     font-weight: 100;
-  }
-}
-@media only screen and (max-width: 412px) {
-  .landingHeading p {
-    margin: 0px;
-    color: #000;
-    height: 120px;
-    font-size: 34px;
-    line-height: 40px;
   }
 }

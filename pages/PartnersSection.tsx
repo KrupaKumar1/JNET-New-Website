@@ -13,7 +13,7 @@ import Image from "next/image";
 const PartnersSection = ({ partners }: { partners: Array<object> }) => {
   return (
     <div className={`${styles.baseWrapper} ${styles.clientsWrapper}`}>
-      <div className="container">
+      <div className="container-fluid container-lg">
         <div className="row">
           <div className="col-12">
             <h2>Our Prestigious Clients</h2>

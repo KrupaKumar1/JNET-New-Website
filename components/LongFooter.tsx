@@ -92,7 +92,7 @@ const LongFooter = () => {
         </div>
       </div>
       <div className={`${footerStyles.copyright}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-12">
               <p className="text-center">

@@ -21,7 +21,7 @@ const ServiceDropdown = (props: ServiceDropdownProps) => {
             : styles.serviceDrop
         } `}
       >
-        <div className={`row mx-5 `}>
+        <div className={`row`}>
           <div
             className={` col-xl-3 text-white ${
               router.asPath === "/About"

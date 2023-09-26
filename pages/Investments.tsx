@@ -1,8 +1,4 @@
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 
 type Props = {};
 
@@ -10,7 +6,7 @@ const Investments = (props: Props) => {
   return (
     <>
       <div className={`${styles.baseWrapper} ${styles.investmentContainer}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row gx-3 mb-5">
             <div className="col-12">
               <h2>Our Strategic Investments</h2>

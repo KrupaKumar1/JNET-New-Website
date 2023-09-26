@@ -2,9 +2,6 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import caseStudyBanner from "../public/assets/banners/case-study.png";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 import Link from "next/link";
 
 type Props = {};
@@ -13,7 +10,7 @@ const CaseStudy = (props: Props) => {
   return (
     <>
       <div className={`${styles.baseWrapper} ${styles.csWrapper}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row gx-3 mb-3">
             <div className="col-12 col-xl-6 text-center">
               <div className={styles.csBanner}>

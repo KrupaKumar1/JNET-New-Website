@@ -1,11 +1,9 @@
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
-import HealthcareBanner from "../public/assets/banners/healthcare-banner.png";
 import Link from "next/link";
 
 type Props = {};
@@ -14,7 +12,7 @@ const IndustryExpertise = (props: Props) => {
   return (
     <>
       <div className={`${styles.baseWrapper} ${styles.industryWrapper}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row gx-3 mb-3">
             <div className="col-12">
               <h2>Industries &amp; Expertises</h2>
@@ -44,7 +42,7 @@ const IndustryExpertise = (props: Props) => {
                 <Tab.Pane eventKey="healthCare">
                   <div className={styles.tabWrapper}>
                     <div className={styles.tabContent}>
-                      <div className="container">
+                      <div className="container-fluid container-lg">
                         <div className="row">
                           <div className="col-12 col-xl-6">
                             <h3>Healthcare & Life Sciences</h3>

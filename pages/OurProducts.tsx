@@ -16,9 +16,9 @@ const OurProducts = (props: Props) => {
   return (
     <>
       <div className={`${styles.baseWrapper} ${styles.ourProductsWrapper}`}>
-        <div className="container">
-          <div className="row gx-3 justify-content-between mb-5">
-            <div className="col-12 col-xl-5">
+        <div className="container-fluid container-lg">
+          <div className="row justify-content-between mb-5">
+            <div className="col-12 col-xl-6">
               <h2>Our Products</h2>
               <p>The Reasons Why We Stand Out</p>
               <p>
@@ -39,14 +39,14 @@ const OurProducts = (props: Props) => {
               />
             </div>
           </div>
-          <div className="row mb-4">
-            <div className="col-12 col-xl offset-4">
+          <div className="row mb-3">
+            <div className="col-12 col-xl-8 offset-4">
               <Card className="cardSecondary first bgSecondary">
                 <Card.Body></Card.Body>
               </Card>
             </div>
           </div>
-          <div className="row">
+          <div className="row gx-3">
             <div className="col-12 col-xl">
               <Card className="cardSecondary first">
                 <Card.Body>

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../../styles/ServicePage.module.css";
 import localF from "@/styles/custom/fonts";
-import Link from "next/link";
 import { services } from "@/helpers/config/services";
 import ChatBotSection from "@/pages/ChatBotSection";
 import Categories from "@/pages/Categories";
@@ -13,7 +12,7 @@ const ServicePage = (props: any) => {
   return (
     <>
       <div className={`${styles.landingContainer}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className={`row ${styles.landingSection}`}>
             <div className={`col-xl-6  col-sm-12 col-md-12 py-5 mt-5`}>
               <p
@@ -42,7 +41,7 @@ const ServicePage = (props: any) => {
       </div>
 
       <div className={` ${styles.serviceDescription}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-xl-7 py-xl-5 mt-xl-5">
               <p className={`${localF.fontPoppinsRegular.className}`}>
@@ -61,7 +60,7 @@ const ServicePage = (props: any) => {
         />
       </div>
       {/* <div className={` ${styles.serviceBigPic}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-xl-6 py-xl-5 mt-xl-5">
               <p
@@ -76,7 +75,7 @@ const ServicePage = (props: any) => {
       </div> */}
       <Categories options={result} />
       {/* <div className={` ${styles.getInTouch}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row py-5">
             <div className="col-xl-12">
               <p

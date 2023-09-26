@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <div className={`${styles.titleContainer} `}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-12">
               <p className={`${styles.text1} text-white`}>Contact Us</p>
@@ -25,7 +25,7 @@ const Contact = () => {
       </div>
 
       <div className={`${styles.contactForm}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className={`row`}>
             <div className="col-12">
               <h2 className="text-white mb-4">Get in touch</h2>

@@ -16,16 +16,19 @@ const LandingSection = (props: any) => {
             Your browser does not support the video tag.
           </video>
           <div className={`${styles.videoContent}`}>
-            <div className="container">
+            <div className="container-fluid container-lg">
               <div className="row">
                 <div
-                  className={`${styles.landingHeading} col-xl-12  col-sm-12 col-md-12 `}
+                  className={`${styles.landingHeading} col-12 col-xl-8 col-xxl-7`}
                 >
                   <h1 className={localFont.fontAileronBold.className}>
-                    From strategy to execution, <br /> we make things happen!
+                    From strategy to execution,{" "}
+                    <span>we make things happen!</span>
                   </h1>
                 </div>
-                <div className={`${styles.landingText} col-12`}>
+                <div
+                  className={`${styles.landingText} col-12 col-xl-7 col-xxl-6`}
+                >
                   <p>
                     In a world of constant change, you need{" "}
                     <b>agile solutions</b> to achieve your business goals.{" "}

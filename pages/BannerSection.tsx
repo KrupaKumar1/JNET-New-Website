@@ -38,8 +38,8 @@ const BannerSection = (props: Props) => {
         </div>
         <div className={`container`}>
           <Tab.Container id="servicesTabs" defaultActiveKey={0}>
-            <Row>
-              <Col sm={6}>
+            <Row className="g-3">
+              <Col sm={12} lg={6}>
                 <h2>Our Services</h2>
                 <p>Innovate Through The Latest Technologies</p>
                 <div className={`${styles.border}`}></div>
@@ -58,7 +58,7 @@ const BannerSection = (props: Props) => {
                   ))}
                 </Nav>
               </Col>
-              <Col sm={6}>
+              <Col sm={12} lg={6}>
                 <Tab.Content className={styles.bannerDescription}>
                   {bannerSectionServices.map((sectionCategory, index) => (
                     <>
@@ -72,7 +72,7 @@ const BannerSection = (props: Props) => {
                         <div className="row g-4 mt-3 mb-5">
                           {sectionCategory.contents.map((sectionContent) => (
                             <>
-                              <div className="col-12 col-lg-6">
+                              <div className="col-12 col-sm-6">
                                 <Card className="cardPrimary">
                                   <Card.Body>
                                     <Card.Title>

@@ -13,7 +13,7 @@ const ServiceDetailsPage = (props: any) => {
   return (
     <>
       <div className={`${styles.landingContainer}`}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className={`row py-5 mt-5 ${styles.landingSection}`}>
             <div className={`col-12`}>
               <p
@@ -31,7 +31,7 @@ const ServiceDetailsPage = (props: any) => {
         </div>
       </div>
       <div className={styles.serviceDetailsContainer}>
-        <div className="container">
+        <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-12 col-xl-6">
               <h2>{result?.text}</h2>

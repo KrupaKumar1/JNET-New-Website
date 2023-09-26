@@ -360,3 +360,45 @@ a {
 .list-primary .list-group-item:last-child {
   border-radius: 0rem;
 }
+
+@media all and (max-width: 1023.98px) {
+  .nav-pills.tabsVertical {
+    margin-right: 0%;
+    flex-direction: row !important;
+    overflow: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* .nav-pills.tabsVertical::before {
+    content: "<";
+    font-size: 3rem;
+    line-height: 10px;
+    width: 30px;
+    height: 30px;
+    border: 30px solid #adadad;
+    background-color: #000;
+    border-radius: 30px;
+  }
+  .nav-pills.tabsVertical::after {
+    content: ">";
+    font-size: 3rem;
+    line-height: 10px;
+    width: 30px;
+    height: 30px;
+    border: 30px solid #adadad;
+    background-color: #000;
+    border-radius: 30px;
+  } */
+  .nav-pills.tabsVertical .nav-item .nav-link {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    margin-right: 2rem;
+  }
+  .nav-pills.tabsVertical .nav-item .nav-link.active {
+    border-bottom: 4px solid #000;
+  }
+}
