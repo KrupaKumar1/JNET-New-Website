@@ -97,8 +97,6 @@ const Navbar = (props: Props) => {
                   <li
                     ref={servicesButton}
                     onClick={() => {
-                      console.log(showService, "showService");
-
                       setShowService(!showService);
                     }}
                   >
@@ -111,7 +109,7 @@ const Navbar = (props: Props) => {
                     <Link href={"/"}>Case Studies</Link>
                   </li> */}
                   <li>
-                    <Link href={"/About"}>Company</Link>
+                    <Link href={"/Company"}>Company</Link>
                   </li>
                   <li>
                     <Link href={"/Contact"}>Contact Us</Link>
@@ -190,7 +188,7 @@ const Navbar = (props: Props) => {
           <li onClick={() => setOpen(false)}>Case Studies</li>
           <li onClick={() => setOpen(false)}>Solutions</li> */}
 
-          <Link href={"/About"} style={{ textDecoration: "none" }}>
+          <Link href={"/Company"} style={{ textDecoration: "none" }}>
             <li onClick={() => setOpen(false)}> Company </li>
           </Link>
 

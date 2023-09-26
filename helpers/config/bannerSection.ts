@@ -204,21 +204,21 @@ export const bannerSectionServices = [
         id: "AB",
         title: "DW&BI Services",
         description:
-          "World-class custom DW&BI services for organizations of any size.",
+          "",
         link: "/service/AB",
       },
       {
         id: "OYD",
         title: "Organizing Your Data into a Single Source of Truth",
         description:
-          "World-class custom DW&BI services for organizations of any size.",
+          "",
         link: "/service/AB/OYD",
       },
       {
         id: "LLTD",
         title: "Leveraging Leading Technologies to Deliver Excellence",
         description:
-          "World-class custom DW&BI services for organizations of any size.",
+          "",
         link: "/service/AB/LLTD",
       },
     ],

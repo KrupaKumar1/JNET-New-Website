@@ -11,20 +11,12 @@ const ServicePage = (props: any) => {
 
   return (
     <>
-      <div className={`${styles.landingContainer}`}>
+      <div className={`${styles.titleContainer}`}>
         <div className="container-fluid container-lg">
-          <div className={`row ${styles.landingSection}`}>
-            <div className={`col-xl-6  col-sm-12 col-md-12 py-5 mt-5`}>
-              <p
-                className={`${localF.fontAileronBold.className} ${styles.preHeading}`}
-              >
-                {result?.category}
-              </p>
-              <p
-                className={`${localF.fontAileronBold.className} ${styles.heading}`}
-              >
-                {result?.heading}
-              </p>
+          <div className="row">
+            <div className="col-12">
+              <p className={`${styles.text1} text-white`}>{result?.category}</p>
+              <p className={`${styles.text2} text-white`}>{result?.heading}</p>
             </div>
           </div>
         </div>

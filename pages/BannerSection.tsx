@@ -23,16 +23,17 @@ const BannerSection = (props: Props) => {
         <div className={styles.bannerTile}>
           <div className="row align-items-center">
             <div className="col">
-              <h2>
-                See how we can help you <br /> reach your goals.
-              </h2>
+              <h2>See how we can help you reach your goals.</h2>
             </div>
+
             <div className="col-auto">
-              <Image
-                src={arrowRightCircleWhite}
-                alt="Right arrow inside circle"
-                className={styles.iconMedia}
-              />
+              <Link href={"./Contact"}>
+                <Image
+                  src={arrowRightCircleWhite}
+                  alt="Right arrow inside circle"
+                  className={styles.iconMedia}
+                />
+              </Link>
             </div>
           </div>
         </div>

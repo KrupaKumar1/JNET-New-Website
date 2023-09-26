@@ -1,3 +1,22 @@
+.titleContainer {
+  width: 100%;
+  padding: 2rem 0rem;
+  margin-top: 80px;
+  background-color: #013398;
+}
+.text1 {
+  font-size: 20px;
+  margin-bottom: 0rem;
+}
+.text2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+}
+.text3 {
+  font-size: 20px;
+  line-height: 24px;
+}
 .landingContainer {
   height: auto;
   width: 100%;
@@ -6,23 +25,19 @@
   background-position: 110% 750%;
   background-size: 530px;
 }
-
 .landingSection {
   background-image: url("../public/LandingSection-Background.svg");
   background-repeat: no-repeat;
   background-position-x: right;
 }
-
 .preHeading {
   font-size: 20px;
   color: #fff;
 }
-
 .heading {
   font-size: 3rem;
   color: #fff;
 }
-
 .scrollingTextContainer {
   width: 100%;
   height: 307px;
@@ -33,7 +48,6 @@
   justify-content: center;
   letter-spacing: 10px;
 }
-
 .scrollingText {
   color: #fff;
   display: inline-block;
@@ -64,7 +78,6 @@
   color: #ffffff;
   line-height: 30px;
 }
-
 .serviceBigPic {
   width: 100%;
   height: 819px;
@@ -73,37 +86,30 @@
   background-size: cover;
   background-position-x: right;
 }
-
 .serviceImage {
   width: 100%;
 }
-
 .bigPicText {
   font-size: 54px;
 }
-
 .getInTouch {
   width: 100%;
   height: 296px;
   background-color: #171fe2;
   color: #ffffff;
 }
-
 .getInTouchHeading {
   font-size: 54px;
 }
-
 .getInTouchLower {
   display: flex;
   justify-content: space-between;
   height: 59px;
   /* border: 1px solid #fff; */
 }
-
 .getInTouchText {
   font-size: 18px;
 }
-
 .getInTouchButton {
   width: 168px;
   height: 48px;
@@ -112,13 +118,11 @@
   justify-content: center;
   background-color: #ffffff;
 }
-
 .getInTouchButtonText {
   color: #000000;
   font-size: 16px;
   cursor: pointer;
 }
-
 /*-----Service Details CSS------*/
 .serviceDetailsContainer {
   width: 100%;
@@ -151,6 +155,10 @@
   margin-top: 1rem;
 }
 
+/*---------------
+Responsive CSS 
+---------------*/
+
 @media screen and (max-width: 480px) {
   .landingContainer {
     height: auto;
@@ -161,31 +169,26 @@
     background-size: 530px;
     padding: 0px 12px;
   }
-
   .landingSection {
     background-image: none;
     background-repeat: no-repeat;
     background-position-x: right;
-    /* height: 80px; */
-    /* margin-bottom: 100px; */
-    /* border: 1px solid red; */
+    /* height: 80px; 
+    margin-bottom: 100px; 
+    border: 1px solid red; */
   }
-
   .preHeading {
     font-size: 18px;
     color: #000;
   }
-
   .heading {
     font-size: 32px;
     color: #000;
   }
-
   .serviceBannerText {
     font-size: 32px;
     width: 678px;
   }
-
   .serviceDescription {
     width: 100%;
     height: auto;
@@ -198,7 +201,6 @@
     line-height: 30px;
     padding: 40px 12px;
   }
-
   .serviceBigPic {
     width: 100%;
     height: 215px;
@@ -208,11 +210,9 @@
     background-position-x: right;
     padding: 20px 12px;
   }
-
   .bigPicText {
     font-size: 18px;
   }
-
   .getInTouch {
     width: 100%;
     height: 296px;
@@ -220,22 +220,18 @@
     color: #ffffff;
     padding: 0px 12px;
   }
-
   .getInTouchHeading {
     font-size: 32px;
   }
-
   .getInTouchLower {
     display: flex;
     justify-content: space-between;
     height: 0px;
     /* border: 1px solid #fff; */
   }
-
   .getInTouchText {
     font-size: 18px;
   }
-
   .getInTouchButton {
     width: 168px;
     height: 48px;
@@ -244,13 +240,11 @@
     justify-content: center;
     background-color: #ffffff;
   }
-
   .getInTouchButtonText {
     color: #000000;
     font-size: 16px;
     cursor: pointer;
   }
-
   .scrollingTextContainer {
     width: 100%;
     height: 100px;
@@ -261,7 +255,6 @@
     justify-content: center;
     letter-spacing: 2.5px;
   }
-
   .scrollingText {
     color: #fff;
     display: inline-block;

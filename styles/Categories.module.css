@@ -83,7 +83,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container {
+  .container-lg {
     display: flex;
     justify-content: center;
     width: 100%;

@@ -78,13 +78,14 @@
   margin-bottom: 0rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479.98px) {
   .footerLogo {
-    height: 38px;
-    width: 191px;
-    padding: 0px 12px;
-    margin-top: 42px;
-    margin-bottom: 42px;
+    width: 200px;
+    height: auto;
+    padding: 0rem;
+  }
+  .footer address {
+    margin-bottom: 0rem;
   }
   .row1 {
     margin-top: 22.5px;

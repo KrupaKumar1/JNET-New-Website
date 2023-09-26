@@ -16,14 +16,15 @@
   margin-bottom: 0rem;
 }
 .text2 {
-  font-size: 54px;
+  font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 0rem;
 }
 .text3 {
   font-size: 20px;
   line-height: 24px;
 }
-/* .container {
+/* .container-lg {
   background-image: url("../public/conatact-bg-circle.svg");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -106,7 +107,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container {
+  .container-lg {
     background-image: none;
     margin-top: 21px;
     padding: 0px 24px;

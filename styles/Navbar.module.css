@@ -163,7 +163,7 @@
     align-items: center;
     position: relative;
     width: 100%;
-    padding: 0 24px !important;
+    padding: 0rem;
     height: 80px;
   }
   .navbarBlack {
@@ -210,30 +210,24 @@
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1000px) {
+@media all and (max-width: 1023.98px) {
   .navbar {
-    height: 10vh;
     transition: top 300ms;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0rem;
   }
-
   .logo {
     width: 30vw;
     padding-top: 5px;
     padding-right: 40px;
-    /* border: 1px solid red; */
   }
-
   .logo img {
     height: 40px;
   }
-
   .hamburger {
     display: flex;
   }
-
   .nav {
     display: none;
   }

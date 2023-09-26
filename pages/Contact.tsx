@@ -4,12 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
-import locationLogo from "../public/location .svg";
-import Image from "next/image";
+
 const Contact = () => {
   return (
     <>
-      <div className={`${styles.titleContainer} `}>
+      <div className={`${styles.titleContainer}`}>
         <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-12">

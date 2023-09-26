@@ -21,116 +21,117 @@ const ServiceDropdown = (props: ServiceDropdownProps) => {
             : styles.serviceDrop
         } `}
       >
-        <div className={`row`}>
-          <div
-            className={` col-xl-3 text-white ${
-              router.asPath === "/About"
-                ? aboutDropStyles.services
-                : styles.services
-            } `}
-          >
-            {/* <h4>Innovate</h4> */}
-            <p>
-              <Link
-                href="/service/CADS"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                Software Development
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/service/AMLS"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                Mobile Application Development
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/service/DACS"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                IT Infrastructure
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/service/SD"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                Telecom Services
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/service/PM"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                Staffing Services
-              </Link>
-            </p>
+        <div className={`container-fluid container-lg`}>
+          <div className={`row`}>
+            <div
+              className={` col-xl-3 text-white ${
+                router.asPath === "/About"
+                  ? aboutDropStyles.services
+                  : styles.services
+              } `}
+            >
+              {/* <h4>Innovate</h4> */}
+              <p>
+                <Link
+                  href="/service/CADS"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  Software Development
+                </Link>
+              </p>
+              <p>
+                <Link
+                  href="/service/AMLS"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  Mobile Application Development
+                </Link>
+              </p>
+              <p>
+                <Link
+                  href="/service/DACS"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  IT Infrastructure
+                </Link>
+              </p>
+              <p>
+                <Link
+                  href="/service/SD"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  Telecom Services
+                </Link>
+              </p>
+              <p>
+                <Link
+                  href="/service/PM"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  Staffing Services
+                </Link>
+              </p>
+            </div>
+
+            <div
+              className={` col-xl-3 text-white ${
+                router.asPath === "/About"
+                  ? aboutDropStyles.services
+                  : styles.services
+              } `}
+            >
+              {/* <h4>Modernize</h4> */}
+              <p>
+                <Link
+                  href="/service/AB"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  Data Warehousing / Business Intelligence
+                </Link>
+              </p>
+              <p>
+                <Link
+                  href="/service/UUCS"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  UX & UI Design and Consulting Services
+                </Link>
+              </p>
+
+              <p>
+                <Link
+                  href="/service/LM"
+                  onClick={() => {
+                    console.log("clicled", showService);
+                    setShowMenu?.(!showMenu);
+                  }}
+                >
+                  QA / Testing
+                </Link>
+              </p>
+            </div>
           </div>
-
-          <div
-            className={` col-xl-3 text-white ${
-              router.asPath === "/About"
-                ? aboutDropStyles.services
-                : styles.services
-            } `}
-          >
-            {/* <h4>Modernize</h4> */}
-            <p>
-              <Link
-                href="/service/AB"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                Data Warehousing / Business Intelligence
-              </Link>
-            </p>
-            <p>
-              <Link
-                href="/service/UUCS"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                UX & UI Design and Consulting Services
-              </Link>
-            </p>
-
-            <p>
-              <Link
-                href="/service/LM"
-                onClick={() => {
-                  console.log("clicled", showService);
-                  setShowMenu?.(!showMenu);
-                }}
-              >
-                QA / Testing
-              </Link>
-            </p>
-          </div>
-
           {/* <div
             className={` col-xl-3 text-white ${
               router.asPath === "/About"

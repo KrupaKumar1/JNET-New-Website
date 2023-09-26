@@ -34,19 +34,13 @@
   font-size: 16px;
   font-family: var(--font-mono);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479.98px) {
   .ChatBotSection {
-    display: flex;
-    width: 100%;
-    background-color: #171fe2;
-    /* padding: 64px 0px; */
-    padding: 40px 12px;
+    padding: 2rem 1rem;
   }
-  .row h1 {
-    font-size: 34px;
-    font-weight: bold;
-    margin: 0px !important;
-    padding-bottom: 22px;
+  .ChatBotSection h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
   }
   .row p {
     font-size: 18px;

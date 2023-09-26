@@ -285,8 +285,8 @@ a {
 .cardSecondary.group .card-body {
   position: relative;
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
   background-image: url("../public/assets/banners/people-group.png");
   background-size: cover;
 }

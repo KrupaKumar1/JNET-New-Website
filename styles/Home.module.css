@@ -405,18 +405,22 @@
   width: 200px;
 }
 
-@media all and (max-width: 1399.98px) {
+/*-------------------
+Responsive Styles
+-------------------*/
+
+@media all and (max-width: 1199.98px) {
   .videoContainer .homeVideo,
   .videoContainer .videoBackdrop {
     height: calc(100vh);
   }
   .bannerWrapper .bannerTile {
-    padding: 2.5rem;
+    padding: 2rem 1.5rem;
     width: 100%;
     top: -56px;
   }
   .videoContainer .videoContent {
-    padding: 2rem 2rem 0rem;
+    padding: 2rem 1rem 0rem;
   }
   .videoContainer .videoContent p {
     font-size: 1rem;
@@ -434,29 +438,58 @@
   }
   .landingContainer {
     padding: 0rem;
+    min-height: 500px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767.98px) {
+  .baseWrapper {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .bannerWrapper {
+    height: auto;
+    padding-top: 0rem;
+  }
+  .bannerWrapper .bannerTile {
+    position: relative;
+    top: 0px;
+    padding: 1.5rem;
+  }
+  .videoContainer,
+  .bannerWrapper .bannerTile,
+  .videoContainer .videoContent {
+    height: calc(100vh);
+  }
+  .bannerWrapper .bannerTile h2 {
+    font-size: 1.25rem;
+  }
+  .bannerWrapper .iconMedia {
+    width: 40px;
+    height: 40px;
+  }
+  .bannerMain {
+    margin-top: 130px;
+    z-index: 9999;
+  }
   .landingContainer {
-    height: 353px;
+    height: auto;
     width: 100%;
     background-image: none;
     font-family: var(--font-mono);
-    padding: 0px 12px;
+    padding: 0rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
   .landingHeading {
-    padding-top: 23px;
     width: 100%;
     display: flex;
     align-items: center;
   }
-
-  /* landingContainer */
-
+  .landingHeading h1 {
+    font-size: 2rem;
+  }
   .landingHeading p {
     color: #000;
     height: 120px;
@@ -472,30 +505,12 @@
     color: #000;
     font-weight: 100;
   }
-  /* bannerWrapper */
-
-  .bannerWrapper {
-    height: 930px;
-    width: 100%;
-    background-image: url("../public/Group\ 15.svg");
-    background-size: 150%;
-    background-position: 20% 100%;
-    background-repeat: no-repeat;
-    background-color: #000;
-    backdrop-filter: brightness(20%);
-    color: #fff;
-  }
-  .bannerMain {
-    margin-top: 130px;
-    z-index: 9999;
-  }
   .accordion {
     background-color: transparent !important;
     border: none !important;
     margin-top: 88px;
     width: 100%;
   }
-
   .accordionItem {
     margin: 0px 0px;
     position: relative;
@@ -513,37 +528,30 @@
     width: 100%;
     text-align: left;
   }
-
   .accordion h2 button svg {
     transition: all 0.4s ease;
     position: absolute;
     right: 0px;
     bottom: 20px;
   }
-
   .accordion h2 button[aria-expanded="false"] svg {
     rotate: 45deg;
   }
-
   .accordion h2 button[aria-expanded="true"] svg {
     rotate: -45deg;
   }
-
   .accordionBody {
     background-color: transparent;
     color: #fff;
   }
-
   .accordionBody a {
     color: #fff;
     text-decoration: none;
   }
-
   .accordionBody a:hover {
     color: #171fe2;
     cursor: pointer;
   }
-
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -569,11 +577,9 @@
     height: 100px;
     width: 180px;
   }
-
   .sliderX {
     height: 100px;
     margin: auto;
-
     overflow: hidden;
     position: relative;
     width: auto;
@@ -616,7 +622,7 @@
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 479.98px) {
   .landingHeading p {
     margin: 0px;
     color: #000;
