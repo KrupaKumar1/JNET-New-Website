@@ -72,6 +72,11 @@ a {
   text-decoration: none;
 }
 
+.imgBanner {
+  width: 100%;
+  height: auto;
+}
+
 .form-floating .form-control,
 .form-floating .form-control:focus {
   border-radius: 0rem;
@@ -160,13 +165,13 @@ a {
 
 .nav-pills.tabsVertical {
   display: flex;
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 .nav-pills.tabsVertical .nav-item .nav-link {
   color: #707070;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 2rem 0rem 2rem 4rem;
+  padding: 1.5rem 0rem 1.5rem 3rem;
   border-radius: 0rem;
   border-bottom: 2px solid #5c5c5c70;
 }
@@ -323,10 +328,10 @@ a {
   background-color: #990000;
 }
 
-.cardSecondary.first,
+/* .cardSecondary.first,
 .cardSecondary.first .card-body {
   border-top-left-radius: 80px !important;
-}
+} */
 .cardSecondary .projectionContent {
   padding: 0rem 2rem;
 }
@@ -398,7 +403,16 @@ a {
     border-bottom: 3px solid transparent;
     margin-right: 2rem;
   }
+  .nav-pills.tabsVertical .nav-item:last-child .nav-link {
+    margin-right: 0rem;
+  }
   .nav-pills.tabsVertical .nav-item .nav-link.active {
     border-bottom: 4px solid #000;
+  }
+}
+
+@media all and (max-width: 767.98px) {
+  .nav-pills.tabsVertical .nav-item .nav-link {
+    padding: 0.5rem 0rem;
   }
 }

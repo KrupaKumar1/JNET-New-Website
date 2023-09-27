@@ -46,7 +46,13 @@
   color: #171fe2;
 }
 
-@media screen and (max-width: 480px) {
+@media all and (max-width: 1023.98px) {
+  .serviceDrop {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
   .serviceDrop {
     position: relative;
     background-color: transparent;
@@ -84,7 +90,6 @@
   }
 
   .services a {
-    /* border: 1px solid #ffffff; */
     text-decoration: none;
     color: #ffffff;
   }

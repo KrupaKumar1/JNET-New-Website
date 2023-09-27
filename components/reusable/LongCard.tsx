@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Icon1 from "../../public/icon1.svg";
 import cardStyles from "../../styles/Card.module.css";
 
 const LongCard = (props: any) => {

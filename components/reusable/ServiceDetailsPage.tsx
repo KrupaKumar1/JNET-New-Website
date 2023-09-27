@@ -12,20 +12,12 @@ const ServiceDetailsPage = (props: any) => {
   console.log(result);
   return (
     <>
-      <div className={`${styles.landingContainer}`}>
+      <div className={`${styles.titleContainer}`}>
         <div className="container-fluid container-lg">
-          <div className={`row py-5 mt-5 ${styles.landingSection}`}>
-            <div className={`col-12`}>
-              <p
-                className={`${localF.fontAileronBold.className} ${styles.preHeading}`}
-              >
-                {result?.category}
-              </p>
-              <h1
-                className={`${localF.fontAileronBold.className} ${styles.heading}`}
-              >
-                {result?.heading}
-              </h1>
+          <div className="row">
+            <div className="col-12">
+              <p className={`${styles.text1} text-white`}>{result?.category}</p>
+              <p className={`${styles.text2} text-white`}>{result?.heading}</p>
             </div>
           </div>
         </div>
@@ -53,9 +45,10 @@ const ServiceDetailsPage = (props: any) => {
       </div>
       <div className={styles.serviceImage}>
         <Image
+          className="imgBanner"
+          src={result?.image as any}
           width={1600}
           height={600}
-          src={result?.image as any}
           alt="No Image"
         />
       </div>

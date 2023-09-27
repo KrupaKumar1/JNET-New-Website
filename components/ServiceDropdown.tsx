@@ -24,7 +24,7 @@ const ServiceDropdown = (props: ServiceDropdownProps) => {
         <div className={`container-fluid container-lg`}>
           <div className={`row`}>
             <div
-              className={` col-xl-3 text-white ${
+              className={`col-12 col-sm-6 col-xl-3 text-white ${
                 router.asPath === "/About"
                   ? aboutDropStyles.services
                   : styles.services
@@ -89,7 +89,7 @@ const ServiceDropdown = (props: ServiceDropdownProps) => {
             </div>
 
             <div
-              className={` col-xl-3 text-white ${
+              className={`col-12 col-sm-6 col-xl-3 text-white ${
                 router.asPath === "/About"
                   ? aboutDropStyles.services
                   : styles.services

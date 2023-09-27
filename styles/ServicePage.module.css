@@ -26,7 +26,7 @@
   background-size: 530px;
 }
 .landingSection {
-  background-image: url("../public/LandingSection-Background.svg");
+  background-image: url("../public/assets/backgrounds/bg-circle-pattern.svg");
   background-repeat: no-repeat;
   background-position-x: right;
 }
@@ -56,6 +56,11 @@
 }
 .serviceBannerText {
   font-size: 54px;
+}
+
+.imgBanner {
+  width: 100%;
+  height: auto;
 }
 
 @keyframes scroll {
@@ -159,7 +164,7 @@
 Responsive CSS 
 ---------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479.98px) {
   .landingContainer {
     height: auto;
     width: 100%;

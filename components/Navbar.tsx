@@ -6,10 +6,10 @@ import JNETLogo from "../public/assets/logos/jnet-logo.svg";
 import JNETLogoWhite from "../public/assets/logos/jnet-logo-white.svg";
 import aboutSideNav from "../styles/AboutSideNav.module.css";
 import ServiceDropdown from "@/components/ServiceDropdown";
-import FacebookIcon from "../public/facebook-logo-ind.svg";
-import InstagramIcon from "../public/instagram-logo-ind.svg";
-import TwitterIcon from "../public/twitter-logo-ind.svg";
-import LinkedinIcon from "../public/Linkedin-logo-ind.svg";
+import FacebookIcon from "../public/assets/icons/icon-facebook.svg";
+import InstagramIcon from "../public/assets/icons/icon-instagram.svg";
+import TwitterIcon from "../public/assets/icons/icon-twitter.svg";
+import LinkedinIcon from "../public/assets/icons/icon-Linkedin.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect, useRef } from "react";
@@ -23,6 +23,7 @@ const Navbar = (props: Props) => {
   const [showService, setShowService] = useState(false);
   const [miniService, setMiniService] = useState(false);
   const servicesButton = useRef<any>(null);
+  const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
@@ -38,7 +39,21 @@ const Navbar = (props: Props) => {
       // setShowService(false);
     });
   }, []);
-
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+        // User is scrolling down
+      } else {
+        setScrolling(false);
+        // User is at the top
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   //? Used to Close the Extended Navbar Services Panel on Switching Tabs (Navigation)
   useEffect(() => {
     setShowService(false);
@@ -54,9 +69,13 @@ const Navbar = (props: Props) => {
       >
         {/* if it is home page add  .home  */}
         <nav
-          className={`${router.asPath === "/" ? navStyles.home : ""} ${
-            showService ? navStyles.navbarService : ""
-          } ${navStyles.navbar} ${
+          className={`${
+            router.asPath === "/"
+              ? scrolling
+                ? navStyles.navbarBlack
+                : navStyles.home
+              : ""
+          } ${showService ? navStyles.navbarService : ""} ${navStyles.navbar} ${
             open ? navStyles.navbarBlack : navStyles.navbar
           }`}
         >
@@ -193,13 +212,13 @@ const Navbar = (props: Props) => {
           </Link>
 
           <Link href={"/Contact"} style={{ textDecoration: "none" }}>
-            <li onClick={() => setOpen(false)}> Contacts Us</li>
+            <li onClick={() => setOpen(false)}> Contact Us</li>
           </Link>
           <div>&nbsp;</div>
           <div>&nbsp;</div>
 
           <div className={sideNav.copyright}>
-            <div className="container pt-5  ">
+            <div className="container-fluid container-lg">
               <div className="row">
                 <div
                   className={`col-xl-2 col-sm-12 col-xs-12 ${sideNav.socialLogos}`}
@@ -233,7 +252,7 @@ const Navbar = (props: Props) => {
                       : sideNav.copyright
                   } mt-xl-2`}
                 >
-                  <h6>Copyright © 2020 JNET. All rights reserved.</h6>
+                  <h6>Copyright © 2023 JNET. All rights reserved.</h6>
                 </div>
               </div>
             </div>

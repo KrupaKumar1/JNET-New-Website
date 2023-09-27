@@ -1,8 +1,5 @@
 import LongCard from "@/components/reusable/LongCard";
 import styles from "../styles/Home.module.css";
-import Icon1 from "../public/icon1.svg";
-import Icon2 from "../public/icon2.svg";
-import Icon3 from "../public/icon3.svg";
 import Image from "next/image";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
@@ -25,7 +22,6 @@ const BannerSection = (props: Props) => {
             <div className="col">
               <h2>See how we can help you reach your goals.</h2>
             </div>
-
             <div className="col-auto">
               <Link href={"./Contact"}>
                 <Image
@@ -37,29 +33,33 @@ const BannerSection = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className={`container`}>
+        <div className="container-fluid container-lg">
           <Tab.Container id="servicesTabs" defaultActiveKey={0}>
             <Row className="g-3">
-              <Col sm={12} lg={6}>
-                <h2>Our Services</h2>
-                <p>Innovate Through The Latest Technologies</p>
-                <div className={`${styles.border}`}></div>
-                <Nav
-                  variant="pills"
-                  className={`${styles.verticalTabs} tabsVertical flex-column`}
-                >
-                  {bannerSectionServices?.map((serviceCategory, index) => (
-                    <>
-                      <Nav.Item>
-                        <Nav.Link eventKey={index}>
-                          {serviceCategory.title}
-                        </Nav.Link>
-                      </Nav.Item>
-                    </>
-                  ))}
-                </Nav>
+              <Col sm={12} lg={5}>
+                <div className="row">
+                  <div className="col-12 col-lg-10">
+                    <h2>Our Services</h2>
+                    <p>Innovate Through The Latest Technologies</p>
+                    <div className={`${styles.border}`}></div>
+                    <Nav
+                      variant="pills"
+                      className={`${styles.verticalTabs} tabsVertical flex-column`}
+                    >
+                      {bannerSectionServices?.map((serviceCategory, index) => (
+                        <>
+                          <Nav.Item>
+                            <Nav.Link eventKey={index}>
+                              {serviceCategory.title}
+                            </Nav.Link>
+                          </Nav.Item>
+                        </>
+                      ))}
+                    </Nav>
+                  </div>
+                </div>
               </Col>
-              <Col sm={12} lg={6}>
+              <Col sm={12} lg={7}>
                 <Tab.Content className={styles.bannerDescription}>
                   {bannerSectionServices.map((sectionCategory, index) => (
                     <>
@@ -104,10 +104,6 @@ const BannerSection = (props: Props) => {
           </Tab.Container>
         </div>
       </div>
-
-      {/* <LongCard heading="Future Vision." icon={Icon1} description="We intend to establish a trusted partnership with our clients by providing the best of tech solutions.  We combine quality with innovation to establish ourselves as the new-age tech solutions company. We align with your requirements to ensure you find success and growth." color="#46d2a0"/>
-        <LongCard heading="Product Design." icon={Icon2} description="We breathe Quality. Our range of products are a proof of what we can envision and create. Quality products at affordable pricing is our mantra. Our products are successful because they are born out of deep thought connected to understanding your requirements at the root-cause level." color="#b195f9"/>
-        <LongCard heading="Innovative Solutions." icon={Icon3} description="We wish to create an impact. Our approach is to come up with innovative solutions that address all your needs and solve your problems. At JNET, Quality and Innovation go hand-in-hand creating a sure shot recipe for success." color="#fea046"/> */}
     </>
   );
 };

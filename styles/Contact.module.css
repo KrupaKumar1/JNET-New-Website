@@ -6,7 +6,7 @@
   margin-top: 80px;
   background-color: #013398;
   line-height: 44px;
-  background-image: url("../public/conatact-bg-circle.svg");
+  background-image: url("../public/assets/backgrounds/bg-circle-pattern.svg");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 1000%;
@@ -25,7 +25,7 @@
   line-height: 24px;
 }
 /* .container-lg {
-  background-image: url("../public/conatact-bg-circle.svg");
+  background-image: url("../public/assets/backgrounds/bg-circle-pattern.svg");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 1000%;
@@ -106,7 +106,15 @@
   font-size: 18px;
 }
 
-@media screen and (max-width: 480px) {
+@media all and (max-width: 1023.98px) {
+  .titleContainer,
+  .contactForm {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
   .container-lg {
     background-image: none;
     margin-top: 21px;
@@ -134,7 +142,7 @@
   .contactForm {
     width: 100%;
     height: 797px;
-    background-image: url("../public/contact-img-bg.png");
+    /* background-image: url("../public/contact-img-bg.png"); */
     opacity: 0.8;
     background-repeat: no-repeat;
     background-position: 60% 100%;

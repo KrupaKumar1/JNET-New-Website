@@ -78,6 +78,13 @@
   margin-bottom: 0rem;
 }
 
+@media all and (max-width: 1023.98px) {
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media screen and (max-width: 479.98px) {
   .footerLogo {
     width: 200px;

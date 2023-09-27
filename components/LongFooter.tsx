@@ -11,12 +11,12 @@ const LongFooter = () => {
   return (
     <>
       <div className={`${footerStyles.footer}`}>
-        <div className={`${footerStyles.container} container`}>
-          <div className={`${footerStyles.row} row`}>
-            <div className={`col-12 col-sm-6 col-lg-4 col-xl-3`}>
+        <div className="container-fluid container-lg">
+          <div className="row">
+            <div className={`col-12 col-xl-3`}>
               <Image
                 src={JNETLogo}
-                alt=""
+                alt="JNET Technologies company logo"
                 className={footerStyles.footerLogo}
               />
               <p className="my-4">
@@ -56,7 +56,7 @@ const LongFooter = () => {
             <div className="col-xl">
               <h2>Contact</h2>
               <div className="row">
-                <div className="col-xl-4">
+                <div className="col-12 col-sm-6 col-lg-4">
                   <h3>Corporate Office</h3>
                   <address>
                     1-89/3/4, Raghuma Towers,
@@ -68,7 +68,7 @@ const LongFooter = () => {
                   <p>Phone: +91 40 4013 8535/36</p>
                   <p>Fax: +91 40 4020 8446</p>
                 </div>
-                <div className="col-xl-4">
+                <div className="col-12 col-sm-6 col-lg-4">
                   <h3>Middle East</h3>
                   <address>
                     Business Center 1, M Floor, The Meydan,
@@ -76,7 +76,7 @@ const LongFooter = () => {
                   </address>
                   <p>Phone: +971 50 573 1899</p>
                 </div>
-                <div className="col-xl-4">
+                <div className="col-12 col-sm-6 col-lg-4">
                   <h3>United States</h3>
                   <address>
                     1640 Highland Falls DR,

@@ -132,7 +132,18 @@
   font-weight: lighter;
   line-height: 27px;
 }
-@media screen and (max-width: 480px) {
+
+@media all and (max-width: 1023.98px) {
+  .titleContainer,
+  .aboutcontainer2,
+  .aboutcontainer3,
+  .aboutcontainer4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
   .titleContainer {
     height: 340px;
     background-color: #171fe2;

@@ -50,7 +50,7 @@
 .landingContainer {
   height: calc(90vh);
   width: 100%;
-  background-image: url("../public/LandingSection-Background.svg");
+  background-image: url("../public/assets/backgrounds/bg-circle-pattern.svg");
   background-repeat: no-repeat;
   font-family: var(--font-mono);
   background-position: 95% 770%;
@@ -123,13 +123,13 @@
   background: linear-gradient(
     to right,
     #ffffff 0%,
-    #ffffff 45%,
-    #f7f7f7 45%,
+    #ffffff 40%,
+    #f7f7f7 40%,
     #f7f7f7 100%
   );
   backdrop-filter: brightness(20%);
-  /* padding-top: 7rem; */
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .bannerWrapper .bannerTile {
   position: absolute;
@@ -412,12 +412,7 @@ Responsive Styles
 @media all and (max-width: 1199.98px) {
   .videoContainer .homeVideo,
   .videoContainer .videoBackdrop {
-    height: calc(100vh);
-  }
-  .bannerWrapper .bannerTile {
-    padding: 2rem 1.5rem;
-    width: 100%;
-    top: -56px;
+    height: calc(100%);
   }
   .videoContainer .videoContent {
     padding: 2rem 1rem 0rem;
@@ -425,9 +420,13 @@ Responsive Styles
   .videoContainer .videoContent p {
     font-size: 1rem;
   }
+  .bannerWrapper .bannerTile {
+    width: 75%;
+    padding: 1.5rem 2.5rem;
+  }
   .bannerWrapper {
     background: #fff;
-    padding-top: 140px;
+    padding-top: 80px;
   }
 }
 
@@ -438,28 +437,44 @@ Responsive Styles
   }
   .landingContainer {
     padding: 0rem;
-    min-height: 500px;
+    /* min-height: 500px; */
+    height: auto;
+  }
+  .videoContainer .videoContent {
+    height: calc(100%);
+  }
+  .bannerWrapper .bannerTile {
+    position: relative;
+    margin-left: -2.5rem;
+    width: calc(100% + 5rem);
+    padding: 2rem;
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .baseWrapper {
-    padding-left: 0rem;
-    padding-right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .bannerWrapper {
     height: auto;
     padding-top: 0rem;
   }
   .bannerWrapper .bannerTile {
-    position: relative;
+    margin-left: -1.5rem;
+    width: calc(100% + 3rem);
     top: 0px;
     padding: 1.5rem;
+    margin-bottom: 2rem;
   }
   .videoContainer,
-  .bannerWrapper .bannerTile,
+  .landingContainer,
   .videoContainer .videoContent {
     height: calc(100vh);
+  }
+  .videoContainer .videoContent {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .bannerWrapper .bannerTile h2 {
     font-size: 1.25rem;
