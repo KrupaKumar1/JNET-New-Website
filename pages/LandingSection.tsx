@@ -8,11 +8,15 @@ const LandingSection = (props: any) => {
       <div className={`${styles.baseWrapper} ${styles.landingContainer} `}>
         <div className={`${styles.videoContainer}`}>
           <div className={`${styles.videoBackdrop}`}></div>
-          <video className={`${styles.homeVideo}`} width="100%" autoPlay loop>
-            <source
-              src="./assets/video/app-video.mp4"
-              type="video/mp4"
-            ></source>
+          <video
+            className={`${styles.homeVideo}`}
+            width="100%"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={props.mainVideoURL} type="video/mp4"></source>
             Your browser does not support the video tag.
           </video>
           <div className={`${styles.videoContent}`}>
