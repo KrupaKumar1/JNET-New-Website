@@ -9,7 +9,7 @@ import ServiceDropdown from "@/components/ServiceDropdown";
 import FacebookIcon from "../public/assets/icons/icon-facebook.svg";
 import InstagramIcon from "../public/assets/icons/icon-instagram.svg";
 import TwitterIcon from "../public/assets/icons/icon-twitter.svg";
-import LinkedinIcon from "../public/assets/icons/icon-Linkedin.svg";
+import LinkedinIcon from "../public/assets/icons/icon-linkedin.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect, useRef } from "react";
