@@ -8,8 +8,6 @@ const ServiceDetail = (props: Props) => {
   const router = useRouter();
   const serviceId = router.query.serviceId;
 
-  console.log("ServiceId", serviceId);
-
   return (
     <>
       <ServicePage serviceId={serviceId} />
