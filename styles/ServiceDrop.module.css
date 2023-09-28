@@ -37,7 +37,6 @@
 }
 
 .services a {
-  /* border: 1px solid #ffffff; */
   text-decoration: none;
   color: #ffffff;
 }
@@ -52,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: 575.98px) {
   .serviceDrop {
     position: relative;
     background-color: transparent;
@@ -60,7 +59,7 @@
     font-style: poppins !important;
     padding: 20px 0px;
     padding-bottom: 0px;
-    margin-left: -46px;
+    margin-left: -10px;
   }
   .serviceOverlay {
     position: fixed;
@@ -79,7 +78,7 @@
   }
 
   .serviceDrop p {
-    width: 300px;
+    width: 100%;
     font-size: 16px;
     cursor: pointer;
     font-weight: 400;

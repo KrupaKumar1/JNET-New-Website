@@ -18,16 +18,13 @@ const ProjectionSection = (props: Props) => {
           <div className="row g-3 mb-3">
             <div className="col-12 col-xl-6">
               <div className={styles.bannerHeader}>
-                <h2>
-                  JNET Unfolds <br />
-                  Solutions to Everything
-                </h2>
+                <h2>JNET Unfolds Solutions to Everything</h2>
                 <p className={styles.description}>
                   The Reasons Why We Stand Out
                 </p>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-xl-2">
+            <div className="col-12 col-sm-4 col-xl-2">
               <Card className="cardSecondary first">
                 <Card.Body>
                   <Image
@@ -38,7 +35,7 @@ const ProjectionSection = (props: Props) => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-12 col-sm-6 col-xl-2">
+            <div className="col-12 col-sm-4 col-xl-2">
               <Card className="cardSecondary">
                 <Card.Body>
                   <Image
@@ -49,7 +46,7 @@ const ProjectionSection = (props: Props) => {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-12 col-sm-6 col-xl-2">
+            <div className="col-12 col-sm-4 col-xl-2">
               <Card className="cardSecondary">
                 <Card.Body>
                   <Image

@@ -39,6 +39,11 @@ const ServiceDetailsPage = (props: any) => {
               <p className={`${styles.description}`}>
                 {result?.contentDescription}
               </p>
+              {result?.contentDescriptionUnique && (
+                <p className={`${styles.subDescription}`}>
+                  {result?.contentDescriptionUnique}
+                </p>
+              )}
             </div>
           </div>
         </div>

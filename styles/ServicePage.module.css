@@ -52,10 +52,12 @@
   color: #fff;
   display: inline-block;
   white-space: nowrap;
+  letter-spacing: normal;
   animation: scroll 20s linear infinite;
 }
 .serviceBannerText {
   font-size: 54px;
+  font-family: var(--font-mono);
 }
 
 .imgBanner {
@@ -74,7 +76,7 @@
 
 .serviceDescription {
   width: 100%;
-  height: 459px;
+  height: auto;
   font-size: 18px;
   background: #171fe2 url("../public/assets/images/Rectangle.png") 0% 0%
     no-repeat padding-box;
@@ -159,6 +161,10 @@
   font-size: 0.875rem;
   margin-top: 1rem;
 }
+.serviceDetailsContainer .subDescription {
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 /*---------------
 Responsive CSS 
@@ -172,7 +178,7 @@ Responsive CSS
     font-family: var(--font-mono);
     background-position: 110% 750%;
     background-size: 530px;
-    padding: 0px 12px;
+    padding: 0px;
   }
   .landingSection {
     background-image: none;

@@ -9,6 +9,21 @@ import Image from "next/image";
 const ServicePage = (props: any) => {
   const result = services.find((service) => service.id == props.serviceId);
 
+  const breakDescription = (text: string) => {
+    // Split the text at "stop" and add a line break after it
+
+    const parts = text?.split(".");
+    console.log(parts);
+    const jsxElements = parts?.map((part, index) => (
+      <React.Fragment key={index}>
+        <p className={`${localF.fontPoppinsRegular.className}`}>
+          {part}. {parts.length > 1 && <br />}
+        </p>
+      </React.Fragment>
+    ));
+    return jsxElements;
+  };
+
   return (
     <>
       <div className={`${styles.titleContainer}`}>
@@ -36,9 +51,7 @@ const ServicePage = (props: any) => {
         <div className="container-fluid container-lg">
           <div className="row">
             <div className="col-xl-7 py-xl-5 mt-xl-5">
-              <p className={`${localF.fontPoppinsRegular.className}`}>
-                {result?.text}
-              </p>
+              {breakDescription(result?.text as string)}
             </div>
           </div>
         </div>

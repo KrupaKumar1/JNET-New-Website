@@ -69,6 +69,7 @@
 .videoContainer {
   position: relative;
   width: 100%;
+  height: calc(100vh);
   overflow: hidden;
 }
 .videoContainer .homeVideo {
@@ -415,13 +416,13 @@ Responsive Styles
     height: calc(100%);
   }
   .videoContainer .videoContent {
-    padding: 2rem 1rem 0rem;
+    padding: 2rem 1.5rem 0rem;
   }
   .videoContainer .videoContent p {
     font-size: 1rem;
   }
   .bannerWrapper .bannerTile {
-    width: 75%;
+    width: 60%;
     padding: 1.5rem 2.5rem;
   }
   .bannerWrapper {
@@ -435,13 +436,19 @@ Responsive Styles
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .landingHeading h1,
+  .baseWrapper h2 {
+    font-size: 2rem;
+  }
   .landingContainer {
     padding: 0rem;
-    /* min-height: 500px; */
     height: auto;
   }
   .videoContainer .videoContent {
     height: calc(100%);
+  }
+  .bannerWrapper {
+    padding: 2rem;
   }
   .bannerWrapper .bannerTile {
     position: relative;
@@ -449,12 +456,19 @@ Responsive Styles
     width: calc(100% + 5rem);
     padding: 2rem;
   }
+  .projectionWrapper {
+    padding: 3rem 0rem;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
   .baseWrapper {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .videoContainer .videoContent h1 {
+    line-height: normal;
+    margin-bottom: 0.5rem;
   }
   .bannerWrapper {
     height: auto;
@@ -637,7 +651,7 @@ Responsive Styles
   }
 }
 
-@media only screen and (max-width: 479.98px) {
+@media only screen and (max-width: 575.98px) {
   .landingHeading p {
     margin: 0px;
     color: #000;
@@ -645,34 +659,7 @@ Responsive Styles
     font-size: 34px;
     line-height: 40px;
   }
-}
-
-@media screen and (max-width: 360px) {
-  .landingContainer {
-    height: 353px;
-    width: 100%;
-    background-image: none;
-    font-family: var(--font-mono);
-    padding: 0px 12px;
-    display: flex;
-    align-items: center;
-  }
-  .landingHeading {
-    padding-top: 0px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .landingHeading p {
-    color: #000;
-    height: 120px;
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .landingText p {
-    margin-top: 14px;
-    font-size: 18px;
-    color: #000;
-    font-weight: 100;
+  .imgCertification {
+    width: 60%;
   }
 }
