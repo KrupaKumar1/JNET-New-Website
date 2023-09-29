@@ -2,7 +2,6 @@ import localFont from "@/styles/custom/fonts";
 import styles from "../styles/Home.module.css";
 
 const LandingSection = (props: any) => {
-  console.log(props.mainVideoURL);
   return (
     <>
       <div className={`${styles.baseWrapper} ${styles.landingContainer} `}>
@@ -16,7 +15,7 @@ const LandingSection = (props: any) => {
             muted
             playsInline
           >
-            <source src={props.mainVideoURL} type="video/mp4"></source>
+            <source src={props?.mainVideoURL} type="video/mp4"></source>
             Your browser does not support the video tag.
           </video>
           {/* <div className={`${styles.videoContent}`}>

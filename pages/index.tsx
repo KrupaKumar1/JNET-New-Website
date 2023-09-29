@@ -60,13 +60,9 @@ export default function Home({ homepageVideo }: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="favicon.ico" />
       </Head>
-
       <LandingSection mainVideoURL={homepageVideo} />
-      {/* <VideoSection /> */}
       <BannerSection />
       <ProjectionSection />
-      {/* <IndustryExpertise />
-      <CaseStudy /> */}
       <OurProducts />
       <PartnersSection partners={[]} />
       <Investors />

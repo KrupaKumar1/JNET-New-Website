@@ -667,7 +667,8 @@ export const servicesDetails = [
     description:
       "With current project locations in 15 telecom circles, JNET has developed competencies in design and building passive infrastructure, Optical Fiber infrastructure, site acquisition, and 24X7 Operation and Maintenance support.",
     contents: [],
-    contentDescription:
+    contentDescription: "",
+    contentTelecom:
       "Long-term agreements with multiple Mobile Telecom and Broadband Service Providers in India. Senior and experienced Project Management Team and has built an effective Supply Chain Management which has a broad Vendor base to enable quick ramp-up of Infrastructure based Projects. Committed to providing the highest level of service quality and timely implementation of the project using best of breed automated systems and processes",
     image: "/assets/images/TelecomService.png",
   },

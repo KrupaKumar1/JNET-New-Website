@@ -58,7 +58,7 @@ const ServicePage = (props: any) => {
       </div>
       <div className={styles.serviceImage}>
         <Image
-          style={{ width: "100%", height: "600px" }}
+          className="imgBanner"
           width={1600}
           height={600}
           src={result?.image as any}

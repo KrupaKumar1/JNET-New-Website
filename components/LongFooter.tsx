@@ -6,6 +6,7 @@ import LinkedinIcon from "../public/assets/icons/media-linkedin.svg";
 import InstagramIcon from "../public/assets/icons/media-instagram.svg";
 import TwitterIcon from "../public/assets/icons/media-twitter.svg";
 import Link from "next/link";
+import { socialLinks } from "@/helpers/socialLinks";
 
 const LongFooter = () => {
   return (
@@ -29,26 +30,34 @@ const LongFooter = () => {
                 <div
                   className={`col-12 col-sm-auto ${footerStyles.socialLogos}`}
                 >
-                  <Image
-                    src={FacebookIcon}
-                    alt="Social Link"
-                    className={footerStyles.iconMedia}
-                  />
-                  <Image
-                    src={InstagramIcon}
-                    alt="Social Link"
-                    className={footerStyles.iconMedia}
-                  />
-                  <Image
-                    src={LinkedinIcon}
-                    alt="Social Link"
-                    className={footerStyles.iconMedia}
-                  />
-                  <Image
-                    src={TwitterIcon}
-                    alt="Social Link"
-                    className={footerStyles.iconMedia}
-                  />
+                  <a href={socialLinks.facebook}>
+                    <Image
+                      src={FacebookIcon}
+                      alt="Social Link"
+                      className={footerStyles.iconMedia}
+                    />
+                  </a>
+                  <a href={socialLinks.instagram}>
+                    <Image
+                      src={InstagramIcon}
+                      alt="Social Link"
+                      className={footerStyles.iconMedia}
+                    />
+                  </a>
+                  <a href={socialLinks.linkedIn}>
+                    <Image
+                      src={LinkedinIcon}
+                      alt="Social Link"
+                      className={footerStyles.iconMedia}
+                    />
+                  </a>
+                  <a href={socialLinks.twitter}>
+                    <Image
+                      src={TwitterIcon}
+                      alt="Social Link"
+                      className={footerStyles.iconMedia}
+                    />
+                  </a>
                 </div>
               </div>
               <p>Email: info@jnettechnologies.com</p>

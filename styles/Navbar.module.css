@@ -33,13 +33,14 @@
 .navbarService {
   background-color: #000000;
 }
+.navbarService .nav li,
 .navbarService .nav li a {
   color: #fff;
 }
 
-.hideNavbar {
+/* .hideNavbar {
   top: -300px;
-}
+} */
 .logo {
   width: 150px;
   /* 
@@ -134,6 +135,13 @@
 }
 .navAbout .navbarService li:nth-child(1) {
   position: relative;
+}
+.nav li.active,
+.nav li.active a,
+.home .nav li.active,
+.home .nav li.active a {
+  color: #fff;
+  background-color: #013398;
 }
 
 /*--------------------

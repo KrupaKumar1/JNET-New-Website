@@ -106,7 +106,7 @@ const Navbar = (props: Props) => {
                 </div>
               </div>
               <div className="col-auto">
-                <div
+                <ul
                   className={`${
                     router.asPath === "/About" ? navStyles.navAbout : ""
                   } ${showService ? navStyles.navService : ""} ${
@@ -133,7 +133,7 @@ const Navbar = (props: Props) => {
                   <li>
                     <Link href={"/Contact"}>Contact Us</Link>
                   </li>
-                </div>
+                </ul>
 
                 {/* <Image
                   onClick={() => setOpen(!open)}

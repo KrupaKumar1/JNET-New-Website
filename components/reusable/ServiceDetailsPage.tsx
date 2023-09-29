@@ -9,7 +9,21 @@ const ServiceDetailsPage = (props: any) => {
   const result = servicesDetails.find(
     (service) => service.id == props.serviceDetailsId
   );
-  console.log(result);
+
+  const splitContent = (text: string) => {
+    // Split the text at "stop" and add a line break after it
+
+    const parts = text?.split(".");
+
+    const jsxElements = parts?.map((part, index) => (
+      <React.Fragment key={index}>
+        <p className={styles.telecomContent}>
+          {part}. {parts.length > 1 && <br />}
+        </p>
+      </React.Fragment>
+    ));
+    return jsxElements;
+  };
   return (
     <>
       <div className={`${styles.titleContainer}`}>
@@ -44,6 +58,12 @@ const ServiceDetailsPage = (props: any) => {
                   {result?.contentDescriptionUnique}
                 </p>
               )}
+              {splitContent(result?.contentTelecom as string)}
+              {/* {result?.contentTelecom && (
+                <p className={`${styles.telecomContent}`}>
+                  {result?.contentTelecom}
+                </p>
+              )} */}
             </div>
           </div>
         </div>

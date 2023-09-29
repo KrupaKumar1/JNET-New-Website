@@ -34,9 +34,9 @@
   background-color: #000000;
 }
 
-.hideNavbar {
+/* .hideNavbar {
   top: -300px;
-}
+} */
 .logo {
   display: flex;
   align-items: center;
