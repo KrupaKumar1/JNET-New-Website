@@ -1,4 +1,3 @@
-import localFont from "@/styles/custom/fonts";
 import styles from "../styles/Home.module.css";
 
 const LandingSection = (props: any) => {
